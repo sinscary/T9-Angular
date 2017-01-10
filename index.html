@@ -7,15 +7,15 @@
 <body ng-controller = "T9Controller">
 	<div>
 		<input type="text" name="" ng-model="textBox"><br><br>
-		<button ng-click="clicked_1()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">1 .,!</button>
-		<button ng-click="clicked_2()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">2 abc</button>
-		<button ng-click="clicked_3()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">3 def</button><br>
-		<button ng-click="clicked_4()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">4 ghi</button>
-		<button ng-click="clicked_5()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">5 jkl</button>
-		<button ng-click="clicked_6()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">6 mno</button><br>
-		<button ng-click="clicked_7()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">7 pqrs</button>
-		<button ng-click="clicked_8()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">8 tuv</button>
-		<button ng-click="clicked_9()" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">9 wxyz</button><br>
+		<button ng-click="clicked('.', ',', '!', '1')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">1 .,!</button>
+		<button ng-click="clicked('a', 'b', 'c', '2')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">2 abc</button>
+		<button ng-click="clicked('d', 'e', 'f', '3')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">3 def</button><br>
+		<button ng-click="clicked('g', 'h', 'i', '4')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">4 ghi</button>
+		<button ng-click="clicked('j', 'k', 'l', '5')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">5 jkl</button>
+		<button ng-click="clicked('m', 'n', 'o', '6')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">6 mno</button><br>
+		<button ng-click="clicked('p', 'q', 'r', '7', 's')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">7 pqrs</button>
+		<button ng-click="clicked('t', 'u', 'v', '8')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">8 tuv</button>
+		<button ng-click="clicked('w', 'x', 'y', 'z', '9')" ng-mousedown="mouseDown()" ng-mouseup="mouseUp()">9 wxyz</button><br>
 		<button id="star" ng-click="clicked_str()">*</button>
 		<button ng-click="clicked_0()">0</button>
 		<button ng-click="clicked_hash()">#</button>

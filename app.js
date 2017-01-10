@@ -13,7 +13,7 @@ T9App.controller('T9Controller', function($scope, $timeout){
 	 $scope.mouseUp = function(){
 	 	$scope.diff = Math.round((new Date()-$scope.pressed)/1000);
 	 }
-	 var clicked = function(str1, str2, str3, val, str4){
+	 $scope.clicked = function(str1, str2, str3, val, str4){
 	     if (timeoutHandler != null){
 	          $timeout.cancel( timeoutHandler );
 	     }
@@ -45,34 +45,6 @@ T9App.controller('T9Controller', function($scope, $timeout){
 	         }
 	         $scope.clickCount = 0;
 	     }, 400)
-	 }
-
-	 $scope.clicked_2 = function(){
-	 	clicked("a", "b", "c", "2");
-	 }
-	 $scope.clicked_3 = function(){
-	 	clicked("d", "e", "f", "3");
-	 }
-	 $scope.clicked_4 = function(){
-	 	clicked("g", "h", "i", "4");
-	 }
-	 $scope.clicked_5 = function(){
-	 	clicked("j", "k", "l", "5");
-	 }
-	 $scope.clicked_6 = function(){
-	 	clicked("m", "n", "o", "6");
-	 }
-	 $scope.clicked_7 = function(){
-	 	clicked("p", "q", "r", "7", "s");
-	 }
-	 $scope.clicked_8 = function(){
-	 	clicked("t", "u", "v", "8");
-	 }
-	 $scope.clicked_9 = function(){
-	 	clicked("w", "x", "y", "9", "z");
-	 }
-	 $scope.clicked_1 = function(){
-	 	clicked(".", ",", "!", "1");
 	 }
 	 $scope.clicked_str = function(){
 	 	$scope.textBox+="*";
