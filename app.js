@@ -21,8 +21,6 @@ T9App.controller('T9Controller', function($scope, $timeout){
 
 	     timeoutHandler = $timeout(function()
 	     {
-	         //now you know the number of clicks.
-	         //set the click count to zero for future clicks
 	         if ($scope.clickCount==1){
 	         	if($scope.diff>=1){
 			 		$scope.textBox+=val;
